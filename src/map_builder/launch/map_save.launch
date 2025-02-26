@@ -1,0 +1,10 @@
+<launch>
+  <!-- 参数：保存地图的路径 -->
+  <arg name="map_name" default="$(find map_builder)/map/map1" />
+  
+  <!-- 节点：运行 map_saver -->
+  <node pkg="map_server" type="map_saver" name="map_saver" args="-f $(arg map_name)" output="screen">
+    <!-- 可选参数：指定地图话题 -->
+    <remap from="map" to="/map" />
+  </node>
+</launch>

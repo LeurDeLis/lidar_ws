@@ -1,0 +1,8 @@
+<launch>
+
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find ldlidar)/rviz/ldlidar_noetic.rviz" output="screen">
+    <!-- 可选参数：设置固定的 TF 坐标系 -->
+        <param name="fixed_frame" value="laser" />
+    </node>
+
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+
+    <include file="$(find ldlidar)/launch/wheeltec_lidar.launch"/>
+    <include file="$(find ldlidar)/launch/ld14p_rviz.launch"/>
+
+</launch>
